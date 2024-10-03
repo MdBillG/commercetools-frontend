@@ -6,6 +6,7 @@ import { BASE_URL } from "./commercetools/config";
 import { useDispatch, useSelector } from "react-redux";
 import { setTotalCarts } from "@/store/cartSlice";
 import { get } from "./commercetools/methods";
+import Accordion from "@/components/Accordion";
 
 
 export default function Home() {
@@ -133,6 +134,13 @@ export default function Home() {
         />
         <button type="submit">Create User</button>
       </form>
+
+      <Accordion name="From  Page" />
+      <Accordion name="dsfdsd">
+        <h1>
+          hell
+        </h1>
+      </Accordion>
     </div>
   );
 }
